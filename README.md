@@ -29,13 +29,12 @@ The system processes visiting card images to extract key details like:
 - **TensorFlow/Keras** (Deep Learning for NER)
 - **Pandas & NumPy** (Data processing)
 - **OpenCV & Tesseract OCR** (Image Processing)
-
+  
 ### Frontend
 - **HTML, CSS, JavaScript** (for UI)
-- **Bootstrap** (Responsive design)
 
 ### Data Storage
-- **CSV / SQLite** (For storing extracted data)
+- **CSV / SQLite** (For storing extracted data) As of now excel
 
 ## Installation & Setup
 ### Prerequisites
@@ -48,24 +47,20 @@ Ensure you have the following installed:
 ### Steps to Setup
 1. Clone or extract the repository:
    ```sh
-   git clone https://github.com/your-repo/Visiting_Card_extraction.git
-   cd Visiting_Card_extraction
+   github.com/Nehaashree-272005/Visiting_Card_Extraction_Powered_By_OCR_NER
+   cd Visiting_Card_extraction_Powered_By_OCR_NER
    ```
-2. Install required dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
-3. Install **Tesseract OCR** (if not installed):
+2. Install **Tesseract OCR** (if not installed):
    - **Windows:** Download and install from [Tesseract GitHub](https://github.com/tesseract-ocr/tesseract)
    - **Linux:** Install via package manager:
      ```sh
      sudo apt install tesseract-ocr
      ```
-4. Run the Flask application:
+3. Run the Flask application:
    ```sh
    python app.py
    ```
-5. Open your browser and visit:
+4. Open your browser and visit:
    ```
    http://127.0.0.1:5000/
    ```
@@ -76,7 +71,6 @@ Visiting_Card_extraction/
 │── app.py                # Main Flask application
 │── Dataset.csv           # Dataset for model training
 │── NER-VC_model.h5       # Pre-trained NER model
-│── requirements.txt      # Required dependencies
 │── static/               # Static assets (CSS, JS, images)
 │── templates/            # HTML templates for UI
 │── uploads/              # Folder for uploaded images
@@ -102,11 +96,11 @@ Visiting_Card_extraction/
 - **Integration of the project with a contact app**
 
 ## Troubleshooting
-**Issue:** Model not recognizing text accurately?
+**Issue:** Is the model not recognizing text accurately?
 - Ensure **Tesseract OCR** is installed properly.
 - Use **high-quality images** with clear text.
 
-**Issue:** Flask app not starting?
+**Issue:** Is the Flask app not starting?
 - Check if **Python and Flask** are installed correctly.
 - Run `pip install -r requirements.txt` to install dependencies.
 
